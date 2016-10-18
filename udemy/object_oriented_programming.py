@@ -32,7 +32,7 @@ print type(X)
 
 class Dog(object):
 	species = 'mammal' # Class Object Attribute
-	def __init__(self,breed,name,fur=True): # special method
+	def __init__(self,breed,name,fur=True): # special method, initiates all attributes of class
 		self.breed = breed # characteristics
 		self.name = name
 		self.fur = fur # By default, set to true
@@ -43,3 +43,69 @@ print sam.breed
 print sam.species
 print sam.name
 print sam.fur
+
+## Class, object attributes and methods ##
+print '## Another Example of Classes ##'
+class Circle(object):
+	# class object attributes
+	pi = 3.14
+	
+	def __init__(self,radius=1):
+		self.radius = radius
+	
+	def area(self):
+		return (self.radius**2) * Circle.pi
+	
+	def set_radius(self,new_radius):
+		self.radius = new_radius
+	
+	def get_radius(self):
+		return self.radius
+		
+c = Circle(radius = 100)
+
+print c.pi
+print c.area()
+print c.radius
+
+d = Circle(radius = 10)
+print d.radius
+c.set_radius(3)
+print c.radius
+print c.get_radius()
+
+print '## Another Example of Classes ##'
+class Animal(object):
+	def __init__(self):
+		print "Animal Created"
+	def whoAmI(self):
+		print "Animal"
+	def eat(self):
+		print "Eating"
+
+a = Animal()
+
+print '## Another Example of Classes (Inheritance)##'
+class Dog(Animal):
+	def __init__(self):
+		Animal.__init__(self)
+		print "Dog created"
+	def whoAmI(self):
+		print "Dog"
+	def bark(self):
+		print "Woof"
+
+d = Dog()
+d.whoAmI()
+d.eat() # Can use eat method from inherited class (Animal)
+
+l = [1,2,3]
+print l
+
+class Book(object):
+	def __init__(self,title,author,pages):
+		print "A book has been created!"
+		self.title = title
+		self.author = author
+		self.pages = pages
+		
