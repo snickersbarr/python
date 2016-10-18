@@ -20,6 +20,7 @@ my_list[0]
 z = my_list[:1]
 y = my_list[0]
 x = my_list[1:]
+print 'What is this'
 w = my_list[:3]
 
 print z
