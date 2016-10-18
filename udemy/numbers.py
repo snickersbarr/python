@@ -4,7 +4,7 @@ from __future__ import division #imports python 3 division
 
 v = (10*3) + (11/4)
 w = 2 + 10 * 10 + 3 #follows order or operations
-x = 5**5
+x = 5**5 #exponents
 y = 3+2
 z = 4**0.5 #square root
 float(3) #makes a float
