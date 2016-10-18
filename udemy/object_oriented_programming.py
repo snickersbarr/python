@@ -32,9 +32,14 @@ print type(X)
 
 class Dog(object):
 	species = 'mammal' # Class Object Attribute
-	def __init__(self,breed): # special method
+	def __init__(self,breed,name,fur=True): # special method
 		self.breed = breed # characteristics
+		self.name = name
+		self.fur = fur # By default, set to true
 
-sam = Dog(breed='Lab')
+sam = Dog(breed='Lab', name='Sammy')
 print sam
 print sam.breed
+print sam.species
+print sam.name
+print sam.fur
