@@ -102,6 +102,7 @@ d.eat() # Can use eat method from inherited class (Animal)
 l = [1,2,3]
 print l
 
+print '## Another Example of Classes ##'
 class Book(object):
 	def __init__(self,title,author,pages):
 		print "A book has been created!"
@@ -109,3 +110,7 @@ class Book(object):
 		self.author = author
 		self.pages = pages
 		
+b = Book('Python','Kunal',100)
+print b.title
+print b.author
+print b.pages
