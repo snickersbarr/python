@@ -17,7 +17,7 @@ print 'First: %s, Second: %s, Third: %s' %('hi','two',3)
 print 'First: %s, Second: %s, Third: %s' %(x,x,x)
 print 'First: %s, Second: %s, Third: %s' %(2,2,2)
 
-#.format allows you to youse {} and order does not matter, can assign values to variables
+#.format allows you to use {} and order does not matter, can assign values to variables
 print 'First: {x}, Second: {x}, Third: {y}'.format(x='inserted',y='two!')
 print 'My name is {x} and my last name is {y}'.format(x='Kunal',y='Pamani!')
 
