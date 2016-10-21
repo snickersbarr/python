@@ -1,9 +1,22 @@
 #!/usr/bin/python
+from __future__ import print_function
 
-user1 = []
-user2 = []
+import os
 
-row1 = ['-','-','-']
-row2 = ['-','-','-']
-row3 = ['-','-','-']
+def display_board(board):
+		
+		os.system('clear')
+		print('   |   |')
+		print(' ' + board[7] + ' | ' + board[8] + ' | ' + board[9])
+		print('   |   |')
+		print('-----------')
+		print('   |   |')
+		print(' ' + board[4] + ' | ' + board[5] + ' | ' + board[6])
+		print('   |   |')
+		print('-----------')
+		print('   |   |')
+		print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
+		print('   |   |')
 
+board = ['-']*10
+display_board(board)

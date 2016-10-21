@@ -62,3 +62,24 @@ def multiply(numbers):
 	return total
 
 print multiply([1,3,4])
+
+# Write a Python function that checks whether a passed string is a palindrome or not.
+print "Checks whether a passed string is a palindrome or not:"
+def palindrome(s):
+	s = s.replace(' ','')
+	return s == s[::-1]
+
+print palindrome('helleh')
+print palindrome('race car')
+print palindrome('hello')
+
+# Write a Python function to check whether a string is pangram or not
+print "Function to check whether a string is a pangram or not:"
+import string
+
+def ispangram(str1, alphabet=string.ascii_lowercase):
+	alphaset = set(alphabet)
+	return alphaset <= set(str1.lower())
+
+print ispangram("The quick brown fox jumps over the lazy dog")
+print ispangram("This is a test to see if my pangram function works")
