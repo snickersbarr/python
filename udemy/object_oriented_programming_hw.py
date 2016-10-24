@@ -36,16 +36,21 @@ print li.slope()
 
 class Cylinder(object):
     
-    def __init__(self,height=1,radius=1):
-        self.height = height
-        self.radius = radius
+	def __init__(self,height=1,radius=1):
+		self.height = height
+		self.radius = radius
         
-    def volume(self):
-        return self.height * (3.14)* (self.radius)**2
+	def volume(self):
+		return self.height * (3.14) * (self.radius)**2
 
 	def surface_area(self):
-		pass
+		top = (3.14)* (self.radius)**2
+		return 2*top + 2*3.14*self.radius*self.height
+#		Another Way(Less clean):
+#		return (2 * (3.14) * (self.radius) * (self.height)) + (2 * (3.14) * (self.radius)**2)
 
+		
 c = Cylinder(2,3)
 
 print c.volume()
+print c.surface_area()
