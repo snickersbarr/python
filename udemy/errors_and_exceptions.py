@@ -69,5 +69,22 @@ def askInt():
 	finally:
 		print "Finally block executed"
 	print val
-		
-askInt()
+
+# Better way of writing askInt to continue through until an integer is given
+# Example of using while True(basically forever). Use else statement to break from while loop
+def askIntBetter():
+	
+	while True:
+		try:
+			val = int(raw_input("Please enter an integer: "))
+		except:
+			print "Looks like you did not enter an integer"
+			continue # They key to this while loop which allows it to go back to the top.
+		else:
+			print "Correct, that as an integer!"
+			break
+		finally: # No matter what this will execute over and over everytime. 
+			print "Finally block executed"
+	print "Your integer is {0}".format(val)
+
+askIntBetter()
