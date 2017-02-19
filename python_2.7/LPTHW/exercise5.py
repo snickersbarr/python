@@ -3,7 +3,6 @@
 ### Exercise 5 ###
 ### More Variables and Printing ###
 
-
 my_name = 'Kunal Pamani'
 my_age = 25
 my_height = 71 # inches
