@@ -24,6 +24,11 @@ print persian_cat
 print backlash_cat
 print fat_cat
 
+## Study Drills ##
+funny_cat = "Trying \t\n tabs and new lines \v and vertical tabs" # Weird how vertical tabs did not work
+print funny_cat
+
+
 '''
 Interesting piece of code that will never stop:
 
