@@ -12,4 +12,10 @@ weight = raw_input()
 
 print "So, you're %r old, %r tall and %r heavy." % (age, height, weight)
 
-# Weird how this does not work in Sublime Text.app but does work in Terminal
+# Weird how this does not work in Sublime Text.app but does work in Terminal2
+
+## Study Drills ##
+
+print "What is your favorite color?"
+color = str(raw_input())
+print "Your favorite color is {}".format(color)
