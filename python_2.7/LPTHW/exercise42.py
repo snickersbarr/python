@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
-# Excercise 42: Animal example of classes
+### Exercise 42 ###
+### Is-A, Has-A, Objects, and Classes ###
 
 ## Animal is-a object(yes, sort of confusing) look at the extra credit
 class Animal(object):
@@ -60,5 +61,20 @@ satan = Cat("Satan")
 ## mary is-a Person
 mary = Person("Mary")
 
-## Mary has-a pet that has a 
+## From mary get the pet attribute and set it to satan
 mary.pet = satan
+
+## Set frank to an instance of class Employee
+frank = Employee("Frank", 120000)
+
+## frank has a pet named rover
+frank.pet = rover
+
+## flipper is a Fish
+flipper = Fish()
+
+## Set crouise to an instance of class Salmon
+crouise = Salmon()
+
+## Set harry to an instance of class Halibut
+harry = Halibut()
