@@ -113,7 +113,7 @@ class LaserWeaponArmory(Scene):
 		print "The container clicks open and the seal breaks, letting gas out."
 		print "You grab the netron bomb and run as fast as you can to the"
 		print "bridge where you must place it in the right spot"
-		# return 'the_bridge'
+		return 'the_bridge'
 
 	else:
 		print "The lock buzzes one last time and then you hear a sickening"
